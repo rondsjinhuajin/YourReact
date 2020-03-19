@@ -1,3 +1,6 @@
+## 首先我提出以下五点疑问？React是什么？React怎么写？React能帮助我们干什么？React有哪些特性？React怎么样？
+官方解释：React 是一个声明式，高效且灵活的用于构建用户界面的 JavaScript 库。使用 React 可以将一些简短、独立的代码片段组合成复杂的 UI 界面，这些代码片段被称作“组件”。<br />
+个人理解：
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
