@@ -18,5 +18,10 @@ export default [
     title: "井字棋",
     key: "/ticTacToe",
     icon: "succuess"
+  },
+  {
+    title: "reactDemo",
+    key: "/reactDemo",
+    icon: "succuess"
   }
 ];
