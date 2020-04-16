@@ -1,11 +1,11 @@
 import React from "react";
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout } from "antd";
 
 import MenuList from "../MenuList";
 
 const { Header, Content, Footer } = Layout;
 
-const Index = props => {
+const Index = (props) => {
   return (
     <>
       <Layout>
@@ -20,9 +20,7 @@ const Index = props => {
             <Breadcrumb.Item>List</Breadcrumb.Item>
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb> */}
-          <div>
-            {props.children}
-          </div>
+          <div>{props.children}</div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
           jinhuajin ©2019-12-04 Created by jinhuajin

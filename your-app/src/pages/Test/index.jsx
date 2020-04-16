@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./index.less";
 const Index = () => {
   function fun(n, o) {
     console.log(o);
     return {
-      fun: function(m) {
+      fun: function (m) {
         return fun(m, n);
-      }
+      },
     };
   }
 
@@ -15,16 +15,13 @@ const Index = () => {
   a.fun(2); // 0
   a.fun(3); // 0
 
-  var b = fun(0)
-    .fun(1)
-    .fun(2)
-    .fun(3); //undefined 0 1 2
+  var b = fun(0).fun(1).fun(2).fun(3); //undefined 0 1 2
 
   var c = fun(0).fun(1); //0
   c.fun(2); //1
   c.fun(3); //1
   // 如何设计一个 4 列等宽布局，各列之间的边距是 10px（考虑浏览器的兼容性）？
-
+  console.log(b);
   return (
     <div className="flexStyle">
       <div className="itemStyle">1</div>

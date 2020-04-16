@@ -1,9 +1,9 @@
 import React from "react";
-import { Switch, Router, Route, Prompt, Redirect } from "react-router-dom";
+import { Switch, Router, Route, Prompt } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { ConfigProvider, Spin } from "antd";
 import Layout from "../components/Layout";
-import menuConfig from "./menuConfig";
+// import menuConfig from "./menuConfig";
 
 // 组件懒加载
 const Home = React.lazy(() => import("../pages/Home"));
@@ -25,7 +25,7 @@ const Index = () => {
     console.log("loading...", location);
   }
   const history = createBrowserHistory();
-  const redirectUrl = "/home";
+  // const redirectUrl = "/home";
 
   return (
     <ConfigProvider>
