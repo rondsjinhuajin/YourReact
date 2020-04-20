@@ -151,6 +151,7 @@ const Game = () => {
           落子坐标：第{(lngLats && lngLats[0]) || "-"}行，第
           {(lngLats && lngLats[1]) || "-"}列
         </div>
+        <div>测试</div>
         {/* <Button onClick={upActiveClick}>{upActive ? "升序" : "降序"}</Button> */}
 
         <div>{status}</div>
