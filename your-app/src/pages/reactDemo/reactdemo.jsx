@@ -24,6 +24,9 @@ class Reactdemo extends Component {
     //   return false
     message.info("接受新的props", newProps);
   }
+
+  // render parse
+  // commit parse
   componentWillUpdate() {
     message.info("更新之前");
   }
@@ -54,7 +57,7 @@ class Reactdemo extends Component {
     // React.forwardRef((props, ref) => (
     //    <div ref={ref}>22</div>
     // ))}
-    // console.log(this.ref);
+    console.log(this.ref);
   };
   render() {
     if (this.state.hasError) {

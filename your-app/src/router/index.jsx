@@ -13,7 +13,7 @@ const Redux = React.lazy(() => import("../pages/Demo/Redux"));
 const TicTacToe = React.lazy(() => import("../pages/TicTacToe"));
 const ReactDemo = React.lazy(() => import("../pages/reactDemo"));
 
-// 组件加载优化
+// 组件加载优化hoc
 const SuspenseComponent = (Component) => (props) => (
   <React.Suspense fallback={<Spin />}>
     <Component {...props}>{props.children}</Component>

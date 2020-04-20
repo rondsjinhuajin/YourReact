@@ -18,15 +18,15 @@ const Index = () => {
   }, []);
   //3,组件  自定义组件
   function Welcome() {
-    return <h1>hello 组件</h1>;
+    return <span>组件1内容</span>;
   }
   //4 组合组件
   function MergeWelcome() {
     return (
-      <>
+      <div>
         <Welcome />
-        <h2>我来学习组件了！</h2>
-      </>
+        <span>组件2内容</span>
+      </div>
     );
   }
   //5生命周期
@@ -53,18 +53,22 @@ const Index = () => {
       </div>
     );
   }
+  // const [isHide, setIsHide] = useState(true);
 
   //自定义hook
   const [nowData, setNowData] = YourHook([]);
+  const [nowData1, setNowData1] = YourHook([]);
+
   function hookClick() {
-    setNowData([1, 2, 3, 4,5]);
+    setNowData([1, 2, 3, 4,5,6]);
+    setNowData1([1,2])
   }
   return (
     <>
+    {'222'}{333}
       {element}
       {time}
-
-      <Welcome />
+      {/* <Welcome /> */}
       <MergeWelcome />
       <textarea className="pStyle" defaultValue=""></textarea>
 
@@ -78,6 +82,7 @@ const Index = () => {
 
       <Button onClick={hookClick}>点击自定义hook</Button>
       {nowData}
+      {nowData1}
     </>
   );
 };
