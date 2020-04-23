@@ -33,7 +33,7 @@ const Game = () => {
   ]);
   const [stepNumber, setStepNumber] = useState(0);
 
-  const [xIsNext, setXIsNext] = useState(0);
+  const [xIsNext, setXIsNext] = useState(false);
 
   const [lngLats, setLngLats] = useState("");
   function handleClick(i) {
@@ -121,6 +121,7 @@ const Game = () => {
   const [firstX, setFirstX] = useState(false);
   function firstStep() {
     setFirstX(!firstX);
+    setXIsNext(!xIsNext);
   }
   //升序，降序
   //   const [upActive, setUpActive] = useState(false);
@@ -151,7 +152,6 @@ const Game = () => {
           落子坐标：第{(lngLats && lngLats[0]) || "-"}行，第
           {(lngLats && lngLats[1]) || "-"}列
         </div>
-        <div>测试</div>
         {/* <Button onClick={upActiveClick}>{upActive ? "升序" : "降序"}</Button> */}
 
         <div>{status}</div>
