@@ -23,5 +23,10 @@ export default [
     title: "reactDemo",
     key: "/reactDemo",
     icon: "succuess"
+  },
+  {
+    title: "Virtual Dom",
+    key: "/virtualdom",
+    icon: "succuess"
   }
 ];

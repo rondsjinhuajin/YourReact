@@ -12,6 +12,7 @@ const Redux = React.lazy(() => import("../pages/Demo/Redux"));
 
 const TicTacToe = React.lazy(() => import("../pages/TicTacToe"));
 const ReactDemo = React.lazy(() => import("../pages/reactDemo"));
+const Virtualdom = React.lazy(() => import("../pages/virtualdom"));
 
 // 组件加载优化hoc
 const SuspenseComponent = (Component) => (props) => (
@@ -45,9 +46,15 @@ const Index = () => {
               component={SuspenseComponent(TicTacToe)}
               path="/ticTacToe"
             ></Route>
+
             <Route
               component={SuspenseComponent(ReactDemo)}
               path="/reactDemo"
+            ></Route>
+
+            <Route
+              component={SuspenseComponent(Virtualdom)}
+              path="/virtualdom"
             ></Route>
           </Switch>
         </Layout>
